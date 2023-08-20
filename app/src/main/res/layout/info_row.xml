@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="10sp"
+    android:layout_marginEnd="10sp"
+    >
+    <FrameLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:foreground="@drawable/row_bg"
+            android:layout_marginLeft="89dp"
+            app:cardBackgroundColor="@color/white">
+            <!--other view items -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:id="@+id/linear_card_layout">
+                <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                    android:textSize="20dp"
+                    android:textColor="@color/backgroundDark"
+                    android:fontFamily="bold"
+                android:text="Name"
+                android:paddingLeft="25dp"
+                android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/location_and_profess"
+                    android:text="Location and Profession"
+                    android:textSize="15dp"
+                    android:paddingLeft="25dp"
+                    android:layout_height="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/range"
+                    android:text="Range"
+                    android:fontFamily="bold"
+                    android:textColor="@color/backgroundDark"
+                    android:paddingLeft="25dp"
+                    android:textSize="15dp"
+                    android:layout_height="25dp"/>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:id="@+id/progress"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_bg"
+                    android:layout_marginLeft="25dp"
+                    android:progress="45"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tags"
+                    android:text="Tags"
+                    android:fontFamily="bold"
+                    android:textColor="@color/backgroundDark"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/aboutus"
+                    android:text="AboutUs"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <ImageView
+        android:layout_width="85sp"
+        android:layout_height="85sp"
+        android:background="@drawable/row_bg"
+        android:backgroundTint="@color/grey"
+        android:layout_marginStart="22sp"
+        android:layout_marginTop="42dp"
+        android:id="@+id/profileImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:clickable="true"
+        android:id="@+id/invite"
+        android:layout_marginTop="20dp"
+        android:text="+ INVITE"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/backgroundDark"
+        android:layout_marginLeft="300dp"
+        android:layout_height="35dp"/>
+
+</FrameLayout>
